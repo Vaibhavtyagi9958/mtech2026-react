@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 function App() {
 
   const navigate = useNavigate();

@@ -9,7 +9,7 @@
             <p>Count1: {count}</p>
             <button onClick={add}>Add</button>
         </div>
-    )
+    );
 }
 
-export default C2f
+export default C2f;
