@@ -2,12 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import C2f from './C2f';
+import Header from './Header';
+import Footer from './Footer';
+// import First from './First';
+import Class1 from './Class1';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+// import Main from './main';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/header" element={<Header />} />
+        <Route path="/" element={<App />} />
+        <Route path="/footer" element={<Footer />} />
+        
+      </Routes>
+      
+    </BrowserRouter>
+      {/* <C2f />
+      <Header />
+      <Footer />
+      <main /> */}
+    {/* <App /> */}
+    {/* <First/> */}
+    {/* <Class1/> */}
   </React.StrictMode>
 );
 
