@@ -5,11 +5,12 @@ import App from './App';
 // import C2f from './C2f';
 import Header from './Header';
 import Footer from './Footer';
+import Main from './Main';
 // import First from './First';
 // import Class1 from './Class1';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Main from './main';
+
 
 
 
@@ -21,7 +22,7 @@ root.render(
         <Route path="/header" element={<Header />} />
         <Route path="/" element={<App />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/main" element={<main/>} />
+        <Route path="/main" element={<Main/>} />
         
       </Routes>
       
@@ -29,7 +30,7 @@ root.render(
       {/* <C2f />
       <Header />
       <Footer /> */}
-      <main />
+      {/* <main /> */}
     {/* <App /> */}
     {/* <First/> */}
     {/* <Class1/> */}

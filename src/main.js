@@ -2,10 +2,10 @@ import{useEffect, useState} from 'react';
 // import {useEffect} from 'react';
 // import {useState} from 'react';
 
-const main = () => {
-    count [count,setCount] = useState(0);
+const Main = () => {
+    const [count,setCount] = useState(0);
     const [age,setAge] = useState(18);
-    const [resdata, setResdata] = useState({});
+    const [resdata, setResdata] = useState([]);
 
     
     useEffect(()=>{
@@ -19,10 +19,10 @@ const main = () => {
     return(
         <div>
             <h1>Example of useEffect</h1>
-            <h3>Countvalue is {count}</h3>
+            <h3>Count value is {count}</h3>
             <button onClick= {()=>setCount(count +1)}> Add </button>
             <h3>Age value is {age}</h3>
-            <button onClick= {()=>setSelectionRange(age + 1)}> Add Age </button>
+            <button onClick= {()=>setAge(age + 1)}> Add Age </button>
 
             <table border= '1'>
                 <thead>
@@ -46,4 +46,4 @@ const main = () => {
     )
 }
 
-export default main;
+export default Main;

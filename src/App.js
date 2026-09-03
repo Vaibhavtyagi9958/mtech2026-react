@@ -22,8 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <button onClick={()=>navigate('/Header',{state:{id:1,name:"abc"}})}>Go To Header</button>
+        <button onClick={()=>navigate('/header',{state:{id:1,name:"abc"}})}>Go To Header</button>
         <button onClick={()=>navigate('/footer')}>Go To Footer</button>
+        <button onClick={()=>navigate('/main')}>Go To Main</button>
 
       </header>
     </div>
