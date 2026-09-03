@@ -1,4 +1,6 @@
-import{useEsffect, useState} from 'react';
+import{useEffect, useState} from 'react';
+// import {useEffect} from 'react';
+// import {useState} from 'react';
 
 const main = () => {
     count [count,setCount] = useState(0);
@@ -13,7 +15,7 @@ const main = () => {
         .catch(err=>console.log(err));
 
         console.log("Use Effect")
-    },[age])
+    },[])
     return(
         <div>
             <h1>Example of useEffect</h1>
@@ -29,12 +31,16 @@ const main = () => {
                         <th>Title</th>
                         <th>Completed</th>
                     </tr>
+                </thead>
+
+                <tbody>
                     <tr>
                         <td>{resdata.useId}</td>
                         <td>{resdata.title}</td>
                         <td>{resdata.completed ? 'true': 'false'}</td>
                     </tr>
-                </thead>
+                </tbody>
+                
             </table>
         </div>
     )

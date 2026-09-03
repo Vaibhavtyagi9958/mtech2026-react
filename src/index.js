@@ -9,7 +9,7 @@ import Footer from './Footer';
 // import Class1 from './Class1';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-// import Main from './main';
+import Main from './main';
 
 
 
@@ -21,14 +21,15 @@ root.render(
         <Route path="/header" element={<Header />} />
         <Route path="/" element={<App />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/main" element={<main/>} />
         
       </Routes>
       
     </BrowserRouter>
       {/* <C2f />
       <Header />
-      <Footer />
-      <main /> */}
+      <Footer /> */}
+      <main />
     {/* <App /> */}
     {/* <First/> */}
     {/* <Class1/> */}
